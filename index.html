@@ -38,13 +38,17 @@
       console.log('login button clicked...');
     }
 
-    var loginBtn = document.querySelector('.login');
-    loginBtn.addEventListener('click', handleLogin);
+    $('.login').on('click', handleLogin);
   </script>
   <h1>Hello World!!</h1>
 
   <p class="status">Login Response: </p>
 
   <button type="button" class="login">Login</button>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 </body>
 </html>
