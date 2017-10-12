@@ -11,16 +11,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800">
 </head>
 <body>
-  <h1>Hello World!!</h1>
-
-  <p class="status">Login Response: </p>
-
-  <button type="button" class="login">Login</button>
-
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
   <script>
     window.fbAsyncInit = function() {
       FB.init({
@@ -43,12 +33,12 @@
        js.src = "//connect.facebook.net/en_US/sdk.js";
        fjs.parentNode.insertBefore(js, fjs);
      }(document, 'script', 'facebook-jssdk'));
-
-    function handleLogin() {
-      console.log('login button clicked...');
-    }
-
-    $('.login').on('click', handleLogin);
   </script>
+  <h1>Hello World!!</h1>
+
+  <p class="status">Login Response: </p>
+
+  <button type="button" class="login">Login</button>
+
 </body>
 </html>
