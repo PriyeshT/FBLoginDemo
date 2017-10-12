@@ -19,6 +19,10 @@
         xfbml            : true,
         version          : 'v2.10'
       });
+
+      FB.getLoginStatus(function(response){
+        console.log('response', response);
+      });
       FB.AppEvents.logPageView();
     };
 
@@ -31,5 +35,7 @@
      }(document, 'script', 'facebook-jssdk'));
   </script>
   <h1>Hello World!!</h1>
+
+  <p class="status">Login Response: </p>
 </body>
 </html>
