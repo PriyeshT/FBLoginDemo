@@ -33,12 +33,19 @@
        js.src = "//connect.facebook.net/en_US/sdk.js";
        fjs.parentNode.insertBefore(js, fjs);
      }(document, 'script', 'facebook-jssdk'));
+
+      function handleLogin() {
+        console.log('hello');
+        FB.login(function(){
+          console.log('response --- ', response);
+        })
+      }
   </script>
   <h1>Hello World!!</h1>
 
   <p class="status">Login Response: </p>
 
-  <button type="button" class="login">Login</button>
+  <button type="button" class="login" onclick="handleLogin()">Login</button>
 
 </body>
 </html>
